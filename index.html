@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donut Survey Form</title>
+    <link rel="stylesheet" href="survey.css">
+  </head> 
+  <body>
+    <div class="survey-container">
+        <header>
+            <h1 id="title">Donut Survey Form</h1>
+            <p class="thank-you" id="description">
+                Thank you for taking the time to give us your thoughts about our donuts. Well will use your input to improve our donuts and overall business.
+            </p>
+        </header>
+        <form class="survey" id="survey-form">
+            <div class="name-container">
+                <label class="name" for="Name" id="name-label">Name</label>
+                <input class="info-bar" type="text" placeholder="Enter your name" id="name" required>
+            </div>
+            <div class="email-container">
+                <label class="email" for="Email" id="email-label">Email</label>
+                <input class="info-bar" type="email" placeholder="Enter your Email" id="email" required>
+            </div>
+            <div class="age-container">
+                <label class="age" for="Age" id="number-label">Age <span class="optional">(optional)</span></label>
+                <input class="info-bar" type="number" placeholder="Age" min="10" max="99" id="number">
+            </div>
+            <div class="recommendation-container">
+                <p class="recommendation">Would you recommend this donut store to a friend?</p>
+                <label class="definitely">
+                    <input class="definitely-button" name="recommend" type="radio" value="definitely" checked>
+                    Definitely
+                </label>
+                <label class="maybe">
+                    <input class="maybe-button" name="recommend" type="radio" value="maybe">
+                    Maybe
+                </label>
+                <label class="not-sure">
+                    <input class="not-sure-button" name="recommend" type="radio" value="not-sure">
+                    Not sure
+                </label>
+            </div>
+            <div class="like-donuts-container">
+                <p class="like-donuts">What do you like the most about out donuts?</p>
+                <select id="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="1">Their taste</option>
+                    <option value="2">Their flavor variety</option>
+                    <option value="3">Their made with oragnic ingredients</option>
+                    <option value="4">Their prices</option>
+                </select>
+            </div>
+            <div class="improvement-container">
+                <p class="improvement">What would you like to see improved? <span class="apply">(Check all that apply)</span></p>
+                <label>
+                    <input type="checkbox" value="flavor">
+                    Number of flavors available 
+                </label>
+                <label>
+                    <input type="checkbox" value="ingredients">
+                    Ingredients used 
+                </label>
+                <label>
+                    <input type="checkbox" value="taste">
+                    Our donuts' taste 
+                </label>
+                <label>
+                    <input type="checkbox" value="price">
+                    Donut prices 
+                </label>
+                <label>
+                    <input type="checkbox" value="rewards">
+                    Loyalty rewards 
+                </label>
+            </div>
+            <div class="comments-container">
+                <p class="comments">Any comments or suggestions?</p>
+                <textarea placeholder="Enter your comment here..." rows="4" cols="50"></textarea>
+            </div>
+            <div class="submit-button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+  </body>   
+</html>
